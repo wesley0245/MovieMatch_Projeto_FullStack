@@ -1,0 +1,18 @@
+# Arquivos de ambiente e senhas (CRÍTICO)
+.env
+
+# Ambiente Virtual
+.venv/
+venv/
+env/
+
+# Cache do Python
+_pycache_/
+*.pyc
+
+
+# Arquivos do VS Code
+.vscode/
+
+# Logs
+django.log
