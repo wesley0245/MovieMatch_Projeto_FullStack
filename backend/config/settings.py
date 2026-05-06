@@ -44,11 +44,17 @@ INSTALLED_APPS = [
     'drf_yasg', # p/ documentação Swagger
     'django_filters', # p/ filtros
 
+    'corsheaders',
+
     'moviematch' # novo APP
 
 ]
 
 MIDDLEWARE = [
+
+    'corsheaders.middleware.CorsMiddleware', # DEVE SER O PRIMEIRO
+    'django.middleware.common.CommonMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -149,3 +155,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
 }
+
+
+CORS_ALLOW_ALL_ORIGINS = True
