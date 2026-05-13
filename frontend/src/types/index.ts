@@ -4,10 +4,15 @@ export interface User {
   email: string;
 }
 
+export interface Genero {
+  id: string;
+  nome: string;
+}
+
 export interface Filme {
   id: string;
   titulo: string;
   ano_lancamento: number;
-  genero: any; // Usamos any aqui para aceitar o ID ou o nome que vem do Django
+  genero: Genero; 
   sinopse?: string;
 }
