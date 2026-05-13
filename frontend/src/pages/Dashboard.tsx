@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import api from '../services/api';
-import { Filme } from '../types/index'; // Lembra de adicionar a interface Filme no seu types/index.ts
+import { Filme } from '../types/index'; 
 import { MovieCard } from '../components/MovieCard';
 
 
@@ -73,13 +73,13 @@ export function Dashboard() {
   return (
   <div className="flex min-h-screen bg-slate-950 text-white" style={{ display: 'flex' }}>
     
-    {/* SIDEBAR - Largura Fixa de 320px */}
+    
     <aside 
       className="bg-slate-900 p-6 border-r border-slate-800 h-screen sticky top-0"
       style={{ width: '320px', minWidth: '320px', flexShrink: 0 }}
     >
       <h2 className="text-xl font-bold mb-1 text-blue-400">Adicione o seu filme</h2>
-      <p className="text-slate-500 text-[10px] mb-6">e deixe sua recomendação</p>
+      <h2 className="text-slate-500 text-[10px] mb-6">e deixe sua recomendação</h2>
 
       <form onSubmit={handleAddFilme} className="flex flex-col gap-3">
         <input 

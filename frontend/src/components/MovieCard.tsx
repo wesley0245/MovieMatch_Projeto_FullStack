@@ -14,8 +14,7 @@ export function MovieCard({ filme, onDelete }: MovieCardProps) {
 
       <div className="p-5 flex flex-col flex-1">
         <div className="flex justify-between items-start mb-1" style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <h2 className="text-sm font-black uppercase text-white truncate w-32">{filme.titulo}</h2>
-          <span className="bg-blue-600 text-white text-[8px] font-black px-1.5 py-0.5 rounded">NOTA</span>
+          <h2 className="text-sm font-black text-white truncate w-32">{filme.titulo}</h2>
         </div>
         
         <p className="text-slate-500 text-[10px] font-bold">{filme.ano_lancamento}</p>
